@@ -1,5 +1,6 @@
-import { ArrowRight, CheckCircle2, FileText, Sparkles, TrendingUp, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, Sparkles, TrendingUp, Zap } from "lucide-react";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
@@ -9,28 +10,10 @@ export default function Home() {
       <div className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-blue-600/20 blur-[120px]" />
       <div className="absolute top-[20%] right-[10%] h-[300px] w-[300px] rounded-full bg-pink-600/10 blur-[100px]" />
 
-      {/* Navigation */}
-      <nav className="fixed top-0 z-50 flex w-full items-center justify-between border-b border-white/5 bg-black/20 px-6 py-4 backdrop-blur-md md:px-12">
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-blue-600">
-            <FileText className="h-5 w-5 text-white" />
-          </div>
-          <Link href="/">
-            <span className="text-xl font-bold tracking-tight">ResuMean</span>
-          </Link>
-        </div>
-        <div className="hidden items-center gap-8 text-sm font-medium text-zinc-400 md:flex">
-          <Link href="/analyze" className="transition-colors hover:text-white">Analyze</Link>
-          <Link href="#" className="transition-colors hover:text-white">How it works</Link>
-          <Link href="#" className="transition-colors hover:text-white">Templates</Link>
-          <Link href="#" className="transition-colors hover:text-white">Pricing</Link>
-        </div>
-        <button className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition-transform hover:scale-105 active:scale-95">
-          Get Started
-        </button>
-      </nav>
 
       <main className="relative z-10 flex flex-col items-center pt-32 pb-20">
+        <Header />
+
         {/* Hero Section */}
         <section className="container flex flex-col items-center px-6 text-center">
           <div className="mb-6 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-purple-300 backdrop-blur-xl">
