@@ -20,6 +20,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="hidden items-center gap-8 text-sm font-medium text-zinc-400 md:flex">
+          <Link href="/analyze" className="transition-colors hover:text-white">Analyze</Link>
           <Link href="#" className="transition-colors hover:text-white">How it works</Link>
           <Link href="#" className="transition-colors hover:text-white">Templates</Link>
           <Link href="#" className="transition-colors hover:text-white">Pricing</Link>
@@ -49,10 +50,10 @@ export default function Home() {
           </p>
 
           <div className="mt-12 flex flex-col items-center gap-4 sm:flex-row">
-            <button className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-4 text-lg font-bold transition-all hover:shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:scale-[1.02]">
+            <Link href="/analyze" className="group flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-4 text-lg font-bold transition-all hover:shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:scale-[1.02]">
               Analyze My Resume Now
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </button>
+            </Link>
             <button className="rounded-full border border-white/10 bg-white/5 px-8 py-4 text-lg font-semibold backdrop-blur-md transition-colors hover:bg-white/10">
               View Sample Report
             </button>
@@ -113,7 +114,7 @@ export default function Home() {
                   </div>
                   <div className="mt-6 rounded-lg bg-purple-500/10 p-4 border border-purple-500/20">
                     <p className="text-xs font-mono text-purple-300">
-                      // AI Suggestion: Replace "Handled team tasks" with "Spearheaded cross-functional initiatives for 12+ engineers..."
+                      {`// AI Suggestion: Replace "Handled team tasks" with "Spearheaded cross-functional initiatives for 12+ engineers..."`}
                     </p>
                   </div>
                 </div>
@@ -134,7 +135,7 @@ export default function Home() {
         {/* Emotion-Focused Features */}
         <section className="container mt-32 px-6">
           <div className="mb-16 text-center">
-            <h2 className="text-3xl font-bold md:text-5xl">Your career deserves more <br /> than a "No-Reply" email.</h2>
+            <h2 className="text-3xl font-bold md:text-5xl">Your career deserves more <br /> than a &quot;No-Reply&quot; email.</h2>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
@@ -151,7 +152,7 @@ export default function Home() {
               },
               {
                 title: "Confidence Restored",
-                desc: "Apply with the certainty that your resume is at its absolute best. No more anxiety every time you hit 'Submit'.",
+                desc: "Apply with the certainty that your resume is at its absolute best. No more anxiety every time you hit &apos;Submit&apos;.",
                 icon: <Sparkles className="h-6 w-6 text-pink-400" />
               }
             ].map((feature, i) => (
@@ -174,9 +175,9 @@ export default function Home() {
             <div className="absolute top-0 left-0 h-full w-full opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
             <h2 className="text-4xl font-bold md:text-5xl">Ready to get hired?</h2>
             <p className="mt-4 text-zinc-300">Join thousands of successful candidates who used ResuMean to land their dream roles.</p>
-            <button className="mt-10 rounded-full bg-white px-10 py-4 text-lg font-bold text-black transition-transform hover:scale-105 active:scale-95">
+            <Link href="/analyze" className="inline-block mt-10 rounded-full bg-white px-10 py-4 text-lg font-bold text-black transition-transform hover:scale-105 active:scale-95">
               Start Free Analysis
-            </button>
+            </Link>
           </div>
         </section>
       </main>
